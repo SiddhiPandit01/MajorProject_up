@@ -1,0 +1,7 @@
+#Wed Apr 05 22:13:58 IST 2017
+base.0=C\:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_85ebbaf4a3c9e202b845abdfd40f024da33f0e67
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_627cd2fa1e1ad5d015be43dd2aa06d4fb124559b\\classes.dex
+base.1=C\:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_627cd2fa1e1ad5d015be43dd2aa06d4fb124559b
+file.0=C\:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_85ebbaf4a3c9e202b845abdfd40f024da33f0e67\\classes.dex

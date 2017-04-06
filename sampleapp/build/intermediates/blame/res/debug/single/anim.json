@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\anim\\abc_fade_in.xml"
+    }
+]

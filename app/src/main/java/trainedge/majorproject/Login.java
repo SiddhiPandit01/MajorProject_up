@@ -1,13 +1,19 @@
 package trainedge.majorproject;
 
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.AccessToken;
@@ -31,6 +37,16 @@ import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.gson.JsonObject;
+import com.linkedin.platform.APIHelper;
+import com.linkedin.platform.LISessionManager;
+import com.linkedin.platform.errors.LIApiError;
+import com.linkedin.platform.errors.LIAuthError;
+import com.linkedin.platform.listeners.ApiListener;
+import com.linkedin.platform.listeners.ApiResponse;
+import com.linkedin.platform.listeners.AuthListener;
+import com.linkedin.platform.utils.Scope;
+import com.squareup.picasso.Picasso;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.Result;
@@ -40,6 +56,10 @@ import com.twitter.sdk.android.core.TwitterSession;
 import com.twitter.sdk.android.core.identity.TwitterLoginButton;
 
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.security.MessageDigest;
 
 import io.fabric.sdk.android.Fabric;
 
@@ -66,15 +86,22 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
     private LoginButton loginButton;
     private CallbackManager mCallbackManager;
 
+    private ImageView imgProfile;
+    private TextView txtDetails;
+    private ImageView imgLogin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
         Fabric.with(this, new Twitter(authConfig));
         setContentView(R.layout.activity_login);
-        sign_in_button=(SignInButton) findViewById(R.id.sign_in_button);
+        computePakageHash();
+        initializeControl();
+        sign_in_button = (SignInButton) findViewById(R.id.sign_in_button);
         twitter_login_button = (TwitterLoginButton) findViewById(R.id.twitter_login_button);
         twitter_login_button.setCallback(new Callback<TwitterSession>() {
+
             @Override
             public void success(Result<TwitterSession> result) {
                 // The TwitterSession is also available through:
@@ -117,9 +144,9 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                 if (user != null) {
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
-                   /* Intent homeIntent = new Intent(Login.this, HomeActivity.class);
+                    Intent homeIntent = new Intent(Login.this, HomeActivity.class);
                     startActivity(homeIntent);
-                    finish();*/
+                    finish();
                 } else {
                     // User is signed out
                     Log.d(TAG, "onAuthStateChanged:signed_out");
@@ -186,8 +213,46 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         // Make sure that the twitter_login_button hears the result from any
         // Activity that it triggered.
         twitter_login_button.onActivityResult(requestCode, resultCode, data);
+        // Add this line to your existing onActivityResult() method
+        LISessionManager.getInstance(getApplicationContext()).onActivityResult(this, requestCode, resultCode, data);
     }
 
+    private void fetchPersonalInfo() {
+        String url = "https://api.linkedin.com/v1/people/~:(id,first-name,last-name,public-profile-url,picture-url,email-address,picture-urls::(original))";
+
+        APIHelper apiHelper = APIHelper.getInstance(getApplicationContext());
+        apiHelper.getRequest(this, url, new ApiListener() {
+            @Override
+            public void onApiSuccess(ApiResponse apiResponse) {
+                // Success!
+                try {
+                    JSONObject jsonObject = apiResponse.getResponseDataAsJson();
+                    String firstName = jsonObject.getString("firstName");
+                    String lastName = jsonObject.getString("lastName");
+                    String pictureUrl = jsonObject.getString("pictureUrl");
+                    String emailAddress = jsonObject.getString("emailAddress");
+                    Picasso.with(getApplicationContext()).load(pictureUrl).into(imgProfile);
+
+                    StringBuilder sb=new StringBuilder();
+                    sb.append("First Name: "+firstName);
+                    sb.append("\n\n");
+                    sb.append("Last Name: "+lastName);
+                    sb.append("\n\n");
+                    sb.append("Email: "+emailAddress);
+                    txtDetails.setText(sb);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onApiError(LIApiError liApiError) {
+                // Error making GET request!
+                Log.e("LAVINA",liApiError.getMessage());
+
+            }
+        });
+    }
 
 
     @Override
@@ -238,6 +303,9 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
             case R.id.sign_in_button:
                 signIn();
                 break;
+            case R.id.imgLogin:
+                handleLogin();
+                break;
 
         }
     }
@@ -263,5 +331,58 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                 // ...
             }
         });
+    }
+
+    private void initializeControl() {
+        imgLogin = (ImageView) findViewById(R.id.imgLogin);
+        imgLogin.setOnClickListener(this);
+        imgProfile = (ImageView) findViewById(R.id.imgProfile);
+        txtDetails = (TextView) findViewById(R.id.txtDetails);
+
+        //Default
+        imgLogin.setVisibility(View.VISIBLE);
+        imgProfile.setVisibility(View.GONE);
+        txtDetails.setVisibility(View.GONE);
+    }
+private void handleLogin() {
+    LISessionManager.getInstance(getApplicationContext()).init(this, buildScope(), new AuthListener() {
+        @Override
+        public void onAuthSuccess() {
+            // Authentication was successful.  You can now do
+            // other calls with the SDK.
+            imgLogin.setVisibility(View.GONE);
+            imgProfile.setVisibility(View.VISIBLE);
+            txtDetails.setVisibility(View.VISIBLE);
+            fetchPersonalInfo();
+        }
+
+
+        @Override
+        public void onAuthError(LIAuthError error) {
+            // Handle authentication errors
+            Log.e("LAVINA",error.toString());
+        }
+    }, true);
+}
+    // Build the list of member permissions our LinkedIn session requires
+    private static Scope buildScope() {
+        return Scope.build(Scope.R_BASICPROFILE, Scope.W_SHARE, Scope.R_EMAILADDRESS);
+
+}
+
+
+    private void computePakageHash() {
+        try {
+            PackageInfo info = getPackageManager().getPackageInfo(
+                    "trainedge.majorproject",
+                    PackageManager.GET_SIGNATURES);
+            for (Signature signature : info.signatures) {
+                MessageDigest md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+            }
+        } catch (Exception e) {
+            Log.e("TAG", e.getMessage());
+        }
     }
 }

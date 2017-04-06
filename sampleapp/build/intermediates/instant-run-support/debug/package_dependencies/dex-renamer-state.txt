@@ -1,0 +1,16 @@
+#Wed Apr 05 21:56:17 IST 2017
+renamed.4=classes5.dex
+renamed.3=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+base.4=C\:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\8\\volley_60f586f3dbf197ea3ecedde73ac96e3062173966
+renamed.0=classes4.dex
+base.3=C\:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_2a1387c9efcf9a9f0802b7e558a974cf81d2bd06
+base.2=C\:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-21.0.3_f2d712c40acb9b4197fc7d9914084ab23ebf70f3
+base.1=C\:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_8f46b0ed8d00cb921f37c17f9884c19208f29967
+base.0=C\:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-21.0.3_fe8969b73af18836b9614d20ee07f1a39dd7dacb
+file.4=C\:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\8\\volley_60f586f3dbf197ea3ecedde73ac96e3062173966\\classes.dex
+file.3=C\:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_2a1387c9efcf9a9f0802b7e558a974cf81d2bd06\\classes.dex
+file.2=C\:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-21.0.3_f2d712c40acb9b4197fc7d9914084ab23ebf70f3\\classes.dex
+file.1=C\:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_8f46b0ed8d00cb921f37c17f9884c19208f29967\\classes.dex
+file.0=C\:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-21.0.3_fe8969b73af18836b9614d20ee07f1a39dd7dacb\\classes.dex
