@@ -71,14 +71,21 @@ public class HomeActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_google) {
+            Intent gotoGoogleActivity=new Intent(HomeActivity.this,GoogleActivity.class);
+            startActivity(gotoGoogleActivity);
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_linkedin) {
+            Intent gotoLinkedInActivity=new Intent(HomeActivity.this,LinkedInActivity.class);
+            startActivity(gotoLinkedInActivity);
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_twitter) {
+            Intent gotoTwitterActivity=new Intent(HomeActivity.this,TwitterActivity.class);
+            startActivity(gotoTwitterActivity);
 
+        } else if (id == R.id.nav_facebook) {
+            Intent gotoFacebookAcitivity=new Intent(HomeActivity.this,FacebookAcitivity.class);
+            startActivity(gotoFacebookAcitivity);
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {

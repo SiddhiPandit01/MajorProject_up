@@ -14,7 +14,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".About"
             android:label="@string/title_activity_about"
@@ -74,7 +74,28 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".FirebaseDatabaseDemo"
-            android:label="@string/title_activity_firebase_database_demo"></activity>
+            android:label="@string/title_activity_firebase_database_demo" />
+        <activity
+            android:name=".FacebookAcitivity"
+            android:label="@string/title_activity_facebook_acitivity"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="trainedge.majorproject.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".GoogleActivity"
+            android:label="@string/title_activity_google"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TwitterActivity"
+            android:label="@string/title_activity_twitter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LinkedInActivity"
+            android:label="@string/title_activity_linked_in"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

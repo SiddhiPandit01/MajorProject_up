@@ -18,4 +18,9 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_firebase_database_demo">FirebaseDatabaseDemo</string>
+    <string name="title_activity_facebook_acitivity">FacebookAcitivity</string>
+    <string name="title_activity_google_acivity">GoogleAcivity</string>
+    <string name="title_activity_google">GoogleActivity</string>
+    <string name="title_activity_twitter">TwitterActivity</string>
+    <string name="title_activity_linked_in">LinkedInActivity</string>
 </resources>
