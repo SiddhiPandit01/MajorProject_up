@@ -95,6 +95,10 @@
         <activity
             android:name=".LinkedInActivity"
             android:label="@string/title_activity_linked_in"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InstagramActivity"
+            android:label="@string/title_activity_instagram"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
