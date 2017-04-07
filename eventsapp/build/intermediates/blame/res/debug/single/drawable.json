@@ -80,12 +80,12 @@
         "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\drawable\\abc_ic_clear_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_search_dropdown_light.xml",
-        "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\drawable\\abc_search_dropdown_light.xml"
-    },
-    {
         "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\arrow_left.png",
         "source": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\eventsapp\\src\\main\\res\\drawable\\arrow_left.png"
+    },
+    {
+        "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_search_dropdown_light.xml",
+        "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\drawable\\abc_search_dropdown_light.xml"
     },
     {
         "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\eventsapp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_ab_holo.xml",

@@ -192,12 +192,12 @@
         "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\drawable-xhdpi\\abc_ic_clear_normal.png"
     },
     {
-        "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
-        "source": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ab_bottom_transparent_light_holo.9.png",
         "source": "C:\\Users\\Lavina\\.android\\build-cache\\fcd8ed146fecb42dd26808c034575c9a4bfc0122\\output\\res\\drawable-xhdpi\\abc_ab_bottom_transparent_light_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_cab_background_bottom_holo_dark.9.png",
