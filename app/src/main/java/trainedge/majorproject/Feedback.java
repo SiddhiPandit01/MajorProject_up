@@ -24,11 +24,7 @@ public class Feedback extends AppCompatActivity implements View.OnClickListener 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        EditText edtName = (EditText) findViewById(R.id.edtName);
-        EditText edtFeed = (EditText) findViewById(R.id.edtFeed);
-        RatingBar rb = (RatingBar) findViewById(R.id.rb);
-        Button btn1 = (Button) findViewById(R.id.btn1);
-        btn1.setOnClickListener(this);
+
 
     }
 
