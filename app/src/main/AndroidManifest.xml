@@ -36,11 +36,7 @@
             android:name=".Login"
             android:label="Login"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data
@@ -99,7 +95,17 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".FirebaseDatabaseDemo"
-            android:label="@string/title_activity_firebase_database_demo"></activity>
+            android:label="@string/title_activity_firebase_database_demo" />
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
