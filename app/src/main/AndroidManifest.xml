@@ -73,9 +73,6 @@
             android:label="@string/title_activity_embedded_timeline"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".FirebaseDatabaseDemo"
-            android:label="@string/title_activity_firebase_database_demo" />
-        <activity
             android:name=".FacebookAcitivity"
             android:label="@string/title_activity_facebook_acitivity"
             android:parentActivityName=".HomeActivity"
@@ -99,7 +96,10 @@
         <activity
             android:name=".InstagramActivity"
             android:label="@string/title_activity_instagram"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FirebaseDatabaseDemo"
+            android:label="@string/title_activity_firebase_database_demo"></activity>
     </application>
 
 </manifest>
