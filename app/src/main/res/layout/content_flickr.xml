@@ -5,11 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="trainedge.majorproject.TwitterActivity"
-    tools:showIn="@layout/activity_twitter">
-
+    tools:context="trainedge.majorproject.FlickrActivity"
+    tools:showIn="@layout/activity_flickr">
     <WebView
-        android:id="@+id/wvTwitter"
+        android:id="@+id/wvFlickr"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,7 +17,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintVertical_bias="0.0">
-
     </WebView>
-
 </android.support.constraint.ConstraintLayout>

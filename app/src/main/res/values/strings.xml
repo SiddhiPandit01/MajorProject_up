@@ -25,4 +25,9 @@
     <string name="title_activity_linked_in">LinkedInActivity</string>
     <string name="title_activity_instagram">InstagramActivity</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_youtube">YoutubeActivity</string>
+    <string name="title_activity_pinterest">PinterestActivity</string>
+    <string name="title_activity_tumblr">TumblrActivity</string>
+    <string name="title_activity_flickr">FlickrActivity</string>
+    <string name="title_activity_friendster">FriendsterActivity</string>
 </resources>

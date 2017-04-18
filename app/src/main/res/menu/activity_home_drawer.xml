@@ -4,24 +4,40 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_google"
-            android:icon="@drawable/ic_public_black_24dp"
+            android:icon="@drawable/googleplus"
             android:title="Google" />
         <item
             android:id="@+id/nav_linkedin"
-            android:icon="@drawable/ic_toys_black_24dp"
+            android:icon="@drawable/linkedin50"
             android:title="LinkedIn" />
         <item
             android:id="@+id/nav_twitter"
-            android:icon="@drawable/ic_visibility_black_24dp"
+            android:icon="@drawable/twitter50"
             android:title="Twitter" />
         <item
             android:id="@+id/nav_facebook"
-            android:icon="@drawable/ic_people_black_24dp"
+            android:icon="@drawable/facebook64"
             android:title="Facebook" />
         <item
             android:id="@+id/nav_instagram"
-            android:icon="@drawable/ic_party_mode_black_24dp"
+            android:icon="@drawable/instagram50"
             android:title="Instagram" />
+        <item
+            android:id="@+id/nav_myspace"
+            android:icon="@drawable/myspace50"
+            android:title="MySpace" />
+        <item
+            android:id="@+id/nav_pinterest"
+            android:icon="@drawable/pinterest50"
+            android:title="Pinterest" />
+        <item
+            android:id="@+id/nav_tumblr"
+            android:icon="@drawable/tumblr50"
+            android:title="Tumblr" />
+        <item
+            android:id="@+id/nav_flickr"
+            android:icon="@drawable/flickr50"
+            android:title="Flickr" />
     </group>
 
     <item android:title="Communicate">

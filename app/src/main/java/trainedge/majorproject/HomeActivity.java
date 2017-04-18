@@ -91,6 +91,21 @@ public class HomeActivity extends AppCompatActivity
             Intent gotoInstagramActivity = new Intent(HomeActivity.this, InstagramActivity.class);
             startActivity(gotoInstagramActivity);
 
+        } else if (id == R.id.nav_myspace) {
+            Intent gotoMySpaceActivity = new Intent(HomeActivity.this, MySpaceActivity.class);
+            startActivity(gotoMySpaceActivity);
+
+        } else if (id == R.id.nav_pinterest) {
+            Intent gotoPinterestActivity = new Intent(HomeActivity.this, PinterestActivity.class);
+            startActivity(gotoPinterestActivity);
+
+        } else if (id == R.id.nav_tumblr) {
+            Intent gotoTumblrActivity = new Intent(HomeActivity.this, TumblrActivity.class);
+            startActivity(gotoTumblrActivity);
+
+        } else if (id == R.id.nav_flickr) {
+            Intent gotoFlickrActivity = new Intent(HomeActivity.this, FlickrActivity.class);
+            startActivity(gotoFlickrActivity);
 
         } else if (id == R.id.nav_share) {
 
