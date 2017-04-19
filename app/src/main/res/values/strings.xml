@@ -29,5 +29,7 @@
     <string name="title_activity_pinterest">PinterestActivity</string>
     <string name="title_activity_tumblr">TumblrActivity</string>
     <string name="title_activity_flickr">FlickrActivity</string>
-    <string name="title_activity_friendster">FriendsterActivity</string>
+    <string name="invitation_title">Connect Now</string>
+    <string name="invitation_message">Install our app to get amazing life</string>
+    <string name="invitation_cta">Install App</string>
 </resources>

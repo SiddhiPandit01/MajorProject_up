@@ -61,6 +61,11 @@ public class HomeActivity extends AppCompatActivity
             startActivity(gotoSetting);
             return true;
         }
+        if(id == R.id.action_feedback){
+            Intent gotoFeedback=new Intent(HomeActivity.this,Feedback.class);
+            startActivity(gotoFeedback);
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -108,6 +113,8 @@ public class HomeActivity extends AppCompatActivity
             startActivity(gotoFlickrActivity);
 
         } else if (id == R.id.nav_share) {
+            Intent gotoFirebaseDatabaseDemo = new Intent(HomeActivity.this, FirebaseDatabaseDemo.class);
+            startActivity(gotoFirebaseDatabaseDemo);
 
         } else if (id == R.id.nav_send) {
 
