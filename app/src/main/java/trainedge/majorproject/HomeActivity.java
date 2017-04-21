@@ -67,6 +67,11 @@ public class HomeActivity extends AppCompatActivity
             return true;
         }
 
+        if(id == R.id.action_about){
+            Intent gotoAbout=new Intent(HomeActivity.this,About.class);
+            startActivity(gotoAbout);
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
