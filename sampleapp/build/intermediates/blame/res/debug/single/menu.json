@@ -1,7 +1,15 @@
 [
     {
+        "merged": "C:\\Users\\welcome\\Documents\\GitHub\\MajorProject_up\\sampleapp\\build\\intermediates\\res\\merged\\debug\\menu\\api.xml",
+        "source": "C:\\Users\\welcome\\Documents\\GitHub\\MajorProject_up\\sampleapp\\src\\main\\res\\menu\\api.xml"
+    },
+    {
         "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\menu\\api.xml",
         "source": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\src\\main\\res\\menu\\api.xml"
+    },
+    {
+        "merged": "C:\\Users\\welcome\\Documents\\GitHub\\MajorProject_up\\sampleapp\\build\\intermediates\\res\\merged\\debug\\menu\\deeplink.xml",
+        "source": "C:\\Users\\welcome\\Documents\\GitHub\\MajorProject_up\\sampleapp\\src\\main\\res\\menu\\deeplink.xml"
     },
     {
         "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\menu\\deeplink.xml",
@@ -10,5 +18,9 @@
     {
         "merged": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
         "source": "C:\\Users\\Lavina\\Documents\\GitHub\\project\\MajorProject\\sampleapp\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\welcome\\Documents\\GitHub\\MajorProject_up\\sampleapp\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Users\\welcome\\Documents\\GitHub\\MajorProject_up\\sampleapp\\src\\main\\res\\menu\\main.xml"
     }
 ]
