@@ -22,6 +22,6 @@ public class LogoutActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View v) {
-        
+
     }
 }

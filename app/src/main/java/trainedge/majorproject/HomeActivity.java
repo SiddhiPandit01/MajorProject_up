@@ -117,10 +117,6 @@ public class HomeActivity extends AppCompatActivity
             Intent gotoFlickrActivity = new Intent(HomeActivity.this, FlickrActivity.class);
             startActivity(gotoFlickrActivity);
 
-        } else if (id == R.id.btnLogout) {
-            Intent gotoLogoutActivity = new Intent(HomeActivity.this, LogoutActivity.class);
-            startActivity(gotoLogoutActivity);
-
         } else if (id == R.id.nav_share) {
             Intent gotoFirebaseDatabaseDemo = new Intent(HomeActivity.this, FirebaseDatabaseDemo.class);
             startActivity(gotoFirebaseDatabaseDemo);
