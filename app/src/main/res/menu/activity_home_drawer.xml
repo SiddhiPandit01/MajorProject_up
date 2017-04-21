@@ -38,6 +38,11 @@
             android:id="@+id/nav_flickr"
             android:icon="@drawable/flickr50"
             android:title="Flickr" />
+
+        <item
+            android:id="@+id/btnLogout"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="Logout" />
     </group>
 
     <item android:title="Communicate">

@@ -120,6 +120,10 @@
             android:name=".FlickrActivity"
             android:label="@string/title_activity_flickr"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LogoutActivity"
+            android:label="@string/title_activity_logout"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

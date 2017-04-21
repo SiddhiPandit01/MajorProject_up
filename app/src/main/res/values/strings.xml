@@ -32,4 +32,5 @@
     <string name="invitation_title">Connect Now</string>
     <string name="invitation_message">Install our app to get amazing life</string>
     <string name="invitation_cta">Install App</string>
+    <string name="title_activity_logout">LogoutActivity</string>
 </resources>
