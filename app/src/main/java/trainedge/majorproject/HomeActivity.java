@@ -1,6 +1,7 @@
 package trainedge.majorproject;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,9 +15,23 @@ import android.view.MenuItem;
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private SharedPreferences pref;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+        pref = getSharedPreferences("setting_pref", MODE_PRIVATE);
+        String theme = pref.getString("theme", "Default");
+        if (theme.equals("Blue")) {
+            setTheme(R.style.BlueTheme);
+        } else if (theme.equals("Black")) {
+            setTheme(R.style.BlackTheme);
+        } else if (theme.equals("White")) {
+            setTheme(R.style.WhiteTheme);
+        } else if (theme.equals("Pink")) {
+            setTheme(R.style.PinkTheme);
+        }
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -61,14 +76,14 @@ public class HomeActivity extends AppCompatActivity
             startActivity(gotoSetting);
             return true;
         }
-        if(id == R.id.action_feedback){
-            Intent gotoFeedback=new Intent(HomeActivity.this,Feedback.class);
+        if (id == R.id.action_feedback) {
+            Intent gotoFeedback = new Intent(HomeActivity.this, Feedback.class);
             startActivity(gotoFeedback);
             return true;
         }
 
-        if(id == R.id.action_about){
-            Intent gotoAbout=new Intent(HomeActivity.this,About.class);
+        if (id == R.id.action_about) {
+            Intent gotoAbout = new Intent(HomeActivity.this, About.class);
             startActivity(gotoAbout);
             return true;
         }
@@ -116,6 +131,35 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_flickr) {
             Intent gotoFlickrActivity = new Intent(HomeActivity.this, FlickrActivity.class);
             startActivity(gotoFlickrActivity);
+
+        } else if (id == R.id.nav_askfm) {
+            Intent gotoAskmActivity = new Intent(HomeActivity.this, AskfmActivity.class);
+            startActivity(gotoAskmActivity);
+
+        } else if (id == R.id.nav_badoo) {
+            Intent gotoBadooActivity = new Intent(HomeActivity.this, BadooActivity.class);
+            startActivity(gotoBadooActivity);
+
+
+        } else if (id == R.id.nav_hi5) {
+            Intent gotoHi5Activity = new Intent(HomeActivity.this, Hi5Activity.class);
+            startActivity(gotoHi5Activity);
+
+        } else if (id == R.id.nav_myspace) {
+            Intent gotoMyLifeActivity = new Intent(HomeActivity.this, MyLifeActivity.class);
+            startActivity(gotoMyLifeActivity);
+
+        } else if (id == R.id.nav_Qoura) {
+            Intent gotoQouraActivity = new Intent(HomeActivity.this, QouraActivity.class);
+            startActivity(gotoQouraActivity);
+
+        } else if (id == R.id.nav_Reddit) {
+            Intent gotoRedditActivity = new Intent(HomeActivity.this, RedditActivity.class);
+            startActivity(gotoRedditActivity);
+
+        } else if (id == R.id.nav_Tagged) {
+            Intent gotoTaggedActivity = new Intent(HomeActivity.this, TaggedActivity.class);
+            startActivity(gotoTaggedActivity);
 
         } else if (id == R.id.btnLogout) {
             Intent gotoLogoutActivity = new Intent(HomeActivity.this, LogoutActivity.class);

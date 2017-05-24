@@ -38,6 +38,31 @@
             android:id="@+id/nav_flickr"
             android:icon="@drawable/flickr50"
             android:title="Flickr" />
+        <item
+            android:id="@+id/nav_askfm"
+            android:icon="@drawable/ask"
+            android:title="Askfm" />
+        <item
+            android:id="@+id/nav_badoo"
+            android:icon="@drawable/med"
+            android:title="Badoo" />
+        <item
+            android:id="@+id/nav_hi5"
+            android:icon="@drawable/media"
+            android:title="Hi5" />
+        <item
+            android:id="@+id/nav_Qoura"
+            android:icon="@drawable/quo"
+            android:title="Qoura" />
+        <item
+            android:id="@+id/nav_Reddit"
+            android:icon="@drawable/redd"
+            android:title="Reddit" />
+        <item
+            android:id="@+id/nav_Tagged"
+            android:icon="@drawable/taa"
+            android:title="Tagged" />
+
 
         <item
             android:id="@+id/btnLogout"

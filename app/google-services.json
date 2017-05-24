@@ -15,10 +15,62 @@
       },
       "oauth_client": [
         {
+          "client_id": "542366607758-2t7virl1d5dopte5unekjnfhl6vailoh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "trainedge.majorproject",
+            "certificate_hash": "6f22e2610a6e9f65a5e9740e21f6221874834092"
+          }
+        },
+        {
           "client_id": "542366607758-75kpt897rqrakql3ud58flia5gjj3dr0.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "trainedge.majorproject",
+            "certificate_hash": "2112f37adab0e7475c52b510734740be8532e97d"
+          }
+        },
+        {
+          "client_id": "542366607758-sld0ptrv5678hoak0ldhu162q3baf2jm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8M93zjn4NIFs6DwoVAzLEHYTn70H2XMM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542366607758-sld0ptrv5678hoak0ldhu162q3baf2jm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542366607758:android:e6f5516aa88f65cc",
+        "android_client_info": {
+          "package_name": "trainedge.myprojectmajor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542366607758-e6nk74rmct1caec67d0bnm4s6lgbfnp9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "trainedge.myprojectmajor",
             "certificate_hash": "2112f37adab0e7475c52b510734740be8532e97d"
           }
         },

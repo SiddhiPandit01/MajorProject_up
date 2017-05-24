@@ -20,25 +20,31 @@
             android:label="@string/title_activity_about"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="trainedge.majorproject.HomeActivity" />
+
         <activity
             android:name=".Feedback"
             android:label="@string/title_activity_feedback"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="trainedge.majorproject.HomeActivity" />
+
         <activity
             android:name=".Settings"
             android:label="@string/title_activity_settings"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="trainedge.majorproject.HomeActivity" />
+
         <activity
             android:name=".HomeActivity"
             android:label="HomeActivity"
@@ -91,33 +97,42 @@
             android:label="@string/title_activity_google"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="trainedge.majorproject.HomeActivity" />
+
         <activity
             android:name=".TwitterActivity"
             android:label="@string/title_activity_twitter"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="trainedge.majorproject.HomeActivity" />
+
         <activity
             android:name=".LinkedInActivity"
             android:label="@string/title_activity_linked_in"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="trainedge.majorproject.HomeActivity" />
+
         <activity
             android:name=".InstagramActivity"
             android:label="@string/title_activity_instagram"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="trainedge.majorproject.HomeActivity" />
+
+
         <activity
             android:name=".FirebaseDatabaseDemo"
             android:label="@string/title_activity_firebase_database_demo" />
@@ -136,41 +151,121 @@
             android:label="MySpaceActivity"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="trainedge.majorproject.HomeActivity" />
+
         <activity
             android:name=".PinterestActivity"
             android:label="@string/title_activity_pinterest"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="trainedge.majorproject.HomeActivity" />
+
         <activity
             android:name=".TumblrActivity"
             android:label="@string/title_activity_tumblr"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="trainedge.majorproject.HomeActivity" />
+
         <activity
             android:name=".FlickrActivity"
             android:label="@string/title_activity_flickr"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="trainedge.majorproject.HomeActivity" />
+
         <activity
             android:name=".LogoutActivity"
             android:label="@string/title_activity_logout"
             android:parentActivityName=".HomeActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="trainedge.majorproject.HomeActivity" />
+
+        <activity
+            android:name=".QouraActivity"
+            android:label="@string/title_activity_qoura"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="trainedge.majorproject.HomeActivity" />
+
+        <activity
+            android:name=".TaggedActivity"
+            android:label="@string/title_activity_tagged"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="trainedge.majorproject.HomeActivity" />
+
+        <activity
+            android:name=".RedditActivity"
+            android:label="@string/title_activity_reddit"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="trainedge.majorproject.HomeActivity" />
+
+        <activity
+            android:name=".Hi5Activity"
+            android:label="@string/title_activity_hi5"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="trainedge.majorproject.HomeActivity" />
+
+        <activity
+            android:name=".BadooActivity"
+            android:label="@string/title_activity_badoo"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="trainedge.majorproject.HomeActivity" />
+
+        <activity
+            android:name=".AskfmActivity"
+            android:label="@string/title_activity_askfm"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="trainedge.majorproject.HomeActivity" />
+
+        <activity
+            android:name=".MyLifeActivity"
+            android:label="@string/title_activity_my_life"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="trainedge.majorproject.HomeActivity" />
+
     </application>
 
 </manifest>

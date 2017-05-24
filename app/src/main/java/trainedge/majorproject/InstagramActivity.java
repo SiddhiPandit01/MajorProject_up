@@ -19,20 +19,13 @@ public class InstagramActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         WebView wvInstagram = (WebView) findViewById(R.id.wvInstagram);
         wvInstagram.getSettings().setJavaScriptEnabled(true);
-        wvInstagram.setWebViewClient(new InstagramCallback());
         wvInstagram.loadUrl("https://www.instagram.com");
+        wvInstagram.setWebViewClient(new InstagramCallback());
     }
     public class InstagramCallback extends WebViewClient {
         @Override

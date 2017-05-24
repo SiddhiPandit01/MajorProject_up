@@ -19,20 +19,13 @@ public class GoogleActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         WebView wvGo=(WebView) findViewById(R.id.wvGo);
         wvGo.getSettings().setJavaScriptEnabled(true);
-        wvGo.setWebViewClient(new GoCallback());
         wvGo.loadUrl("https://plus.google.com");
+        wvGo.setWebViewClient(new GoCallback());
     }
 
     public class GoCallback extends WebViewClient {

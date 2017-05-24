@@ -33,4 +33,24 @@
     <string name="invitation_message">Install our app to get amazing life</string>
     <string name="invitation_cta">Install App</string>
     <string name="title_activity_logout">LogoutActivity</string>
+    <string name="title_activity_qoura">QouraActivity</string>
+    <string name="title_activity_tagged">TaggedActivity</string>
+    <string name="title_activity_reddit">RedditActivity</string>
+    <string name="title_activity_hi5">Hi5Activity</string>
+    <string name="title_activity_badoo">BadooActivity</string>
+    <string name="title_activity_askfm">AskfmActivity</string>
+    <string name="title_activity_my_life">MyLifeActivity</string>
+    <string-array name="theme">
+        <item>Default</item>
+        <item>Blue</item>
+        <item>Black</item>
+        <item>White</item>
+        <item>Pink</item>
+    </string-array>
+
+    <string-array name="quality">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
 </resources>

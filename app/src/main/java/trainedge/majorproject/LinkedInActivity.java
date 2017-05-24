@@ -19,20 +19,13 @@ public class LinkedInActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         WebView wvLinkedIn = (WebView) findViewById(R.id.wvLinkedIn);
         wvLinkedIn.getSettings().setJavaScriptEnabled(true);
-        wvLinkedIn.setWebViewClient(new LinkedInCallback());
         wvLinkedIn.loadUrl("https://www.linkedin.com");
+        wvLinkedIn.setWebViewClient(new LinkedInCallback());
     }
 
     public class LinkedInCallback extends WebViewClient {
